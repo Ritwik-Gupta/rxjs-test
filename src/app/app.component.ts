@@ -15,14 +15,14 @@ export class AppComponent {
     {title: "test title3", description: "test description 3"}
   ]
 
-  promise = new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve('Resolving the promise...done!')
-    }, 3000)
-  })
+  // promise = new Promise((resolve, reject) => {
+  //   setTimeout(() => {
+  //     resolve('Resolving the promise...done!')
+  //   }, 3000)
+  // })
 
   ArrayObservable$ = from(this.testArray);
-  PromiseObservable$ = from(this.promise);
+  // PromiseObservable$ = from(this.promise);
 
   constructor() {
 
@@ -32,10 +32,10 @@ export class AppComponent {
       complete: () => console.log("Done!")
     });
 
-    this.PromiseObservable$.subscribe({
-      next: (data) => console.log(data),
-      error: (error) => console.log(error),
-      complete: () => console.log("Ok done")
-    })
+    // this.PromiseObservable$.subscribe({
+    //   next: (data) => console.log(data),
+    //   error: (error) => console.log(error),
+    //   complete: () => console.log("Ok done")
+    // })
   }
 }
