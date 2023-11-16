@@ -8,6 +8,11 @@ import { IntervalObsComponent } from './components/interval-obs/interval-obs.com
 import { RxjsOperatorsComponent } from './components/rxjs-operators/rxjs-operators.component';
 import { BufferOperatorComponent } from './components/rxjs-operators/buffer-operator/buffer-operator.component';
 import { BufferCountComponent } from './components/rxjs-operators/buffer-count/buffer-count.component';
+import { BufferTimeComponent } from './components/rxjs-operators/buffer-time/buffer-time.component';
+import { CounterComponent } from './components/counter/counter.component';
+import { CounterViewComponent } from './components/counter/counter-view/counter-view.component';
+import { CounterButtonsComponent } from './components/counter/counter-buttons/counter-buttons.component';
+import { CounterServiceComponent } from './services/counter-service/counter-service.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +21,12 @@ import { BufferCountComponent } from './components/rxjs-operators/buffer-count/b
     IntervalObsComponent,
     RxjsOperatorsComponent,
     BufferOperatorComponent,
-    BufferCountComponent
+    BufferCountComponent,
+    BufferTimeComponent,
+    CounterComponent,
+    CounterViewComponent,
+    CounterButtonsComponent,
+    CounterServiceComponent
   ],
   imports: [
     BrowserModule,
